@@ -1,0 +1,13 @@
+clean_dirs:
+  - /path/to/clean/speech
+noise_dirs:
+  - /path/to/noisy/speech
+rir_dirs:
+  - /path/to/impulse_responses/
+sr: 16000
+snr_range: [-5, 20]
+segment_length: 128000
+noise_prob: 0.9
+reverb_prob: 0.5
+
+data_dir: /path/to/test/dir

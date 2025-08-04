@@ -1,0 +1,27 @@
+inherit: ['dataset.yaml', 'models.yaml']
+beta:  2.0e-2
+t_min: 3.0e-2
+t_max: 1
+
+latent_dim: 1024
+model_dim: 2048
+num_head: 16
+num_layers: 16
+
+seed: 42
+batch_size: 32
+learning_rate: 1.0e-4
+num_epoch : 100
+ema_rate: 0.999
+run_dir: /root/runs/DBLM_SE
+
+log_with : wandb
+save_state_steps: 100
+evaluate_steps: 1000
+log_steps: 10
+checkpoints_total_limit: 1
+patience: 10
+resume: False
+
+audio_encoder: WavLM
+audio_codec: XCodec2

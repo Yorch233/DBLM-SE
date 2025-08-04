@@ -1,0 +1,90 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Configuration
+config.yaml
+config.json
+*.conf
+
+# Checkpoints and models (local)
+checkpoints/
+models/
+*.ckpt
+*.pt
+*.pth
+*.bin
+
+# Audio files (temporary)
+*.wav
+*.flac
+*.mp3
+
+# TensorBoard logs
+runs/
+lightning_logs/
+
+# DVC (if used)
+.dvc/
+
+# Weights & Biases (if used)
+wandb/
+
+# Local data directories
+data/
+datasets/
+
+# Cache directories
+.cache/
+torch/
+huggingface/

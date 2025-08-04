@@ -1,0 +1,11 @@
+WavLM:
+  model_path : checkpoints/WavLM/WavLM-Large.pt
+  output_layer : 6
+  
+XCodec2:
+  model_paths :
+    wav2vec : checkpoints/Wav2vec
+    codec : checkpoints/Xcodec2/codec.safetensors
+  codec_dim : 2048
+  semantic_dim : 1024
+

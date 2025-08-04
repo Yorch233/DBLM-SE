@@ -1,0 +1,16 @@
+datasets:
+    LibriSpeech:
+        root: /aifs4su/data/zheny/data/data_8_21_2/ 
+        trainsets: ['dev', 'test','train']
+        testsets: ['test-clean']
+view:
+    train_filelist: /aifs4su/data/zheny/data/data_8_21_2/mls_all_audio_path_higher_quality.txt
+    test_filelist: /aifs4su/data/zheny/data/data_8_21_2/mls_all_audio_path_test.txt
+audio:
+  sr: 16000
+  normalization: False
+  max_wav_value: 32768.0
+stft:
+  n_fft: 1280
+  window_length: 1280
+  hop_length: 320

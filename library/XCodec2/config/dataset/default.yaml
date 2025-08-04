@@ -1,0 +1,20 @@
+dataset:
+  _target_: data_module.FSDataset_add_STFT
+
+train:
+  filelist: /aifs4su/data/zheny/data/data_8_21_2/mls_all_audio_path_higher_quality.txt
+  batch_size: 8
+  shuffle: true
+
+val:
+  filelist: /aifs4su/data/zheny/data/data_8_21_2/mls_all_audio_path_test.txt
+  batch_size:  8
+  shuffle: false
+
+test:
+  filelist: /aifs4su/data/zheny/data/data_8_21_2/mls_all_audio_path_test.txt
+  batch_size: 1
+  shuffle: false
+padding_idx: 0
+frame_length: 200
+min_audio_length: 96000
