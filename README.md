@@ -94,7 +94,7 @@ This repository includes the complete DBLM model for latent restoration and acou
 
 The training data for **DBLM-SE-1B** is constructed following the **DNS Challenge** methodology ([Microsoft DNS Challenge](https://github.com/microsoft/DNS-Challenge )), ensuring realistic and diverse noisy-reverberant conditions for robust speech enhancement.
 
-- **Clean Speech**: LibriVox, VCTK, TIMIT  
+- **Clean Speech**: LibriVox, VCTK
 - **Noise**: AudioSet, Freesound, DEMAND  
 - **Room Impulse Responses (RIRs)**: OpenSLR26, OpenSLR28
 
