@@ -92,8 +92,17 @@ This repository includes the complete DBLM model for latent restoration and acou
 | **Input**        | WavLM-Large continuous latents (T × 1024) |
 | **Output**       | XCodec2 discrete acoustic token IDs (multi-codebook) |
 
+The training data for **DBLM-SE-1B** is constructed following the **DNS Challenge** methodology ([Microsoft DNS Challenge](https://github.com/microsoft/DNS-Challenge )), ensuring realistic and diverse noisy-reverberant conditions for robust speech enhancement.
 
----
+- **Clean Speech**: LibriVox, VCTK, TIMIT  
+- **Noise**: AudioSet, Freesound, DEMAND  
+- **Room Impulse Responses (RIRs)**: OpenSLR26, OpenSLR28
+
+To improve generalization and prevent overfitting, noisy and reverberant training samples are generated **on the fly** during training with the following augmentation strategy:
+- **90% probability** of adding background noise (SNR: [-5, 20] dB)
+- **50% probability** of applying reverberation via RIR convolution
+
+This dynamic mixing pipeline enables the model to learn **joint denoising and dereverberation** in a realistic and data-efficient manner.
 
 ## 🚧 Upcoming Features
 
