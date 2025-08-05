@@ -4,7 +4,7 @@
 **Model Hub:** [Yorch233/DBLM-SE-1B](https://huggingface.co/Yorch233/DBLM-SE-1B)  
 **Code Repository:** [GitHub - Yorch233/DBLM-SE](https://github.com/Yorch233/DBLM-SE)
 
-**DBLM-SE-1B** is a 1-billion-parameter **Diffusion Bridge Language Model (DBLM)** designed for high-fidelity **speech enhancement**. By modeling the restoration process as a *diffusion bridge* in the latent space, the model leverages an LLM-style architecture to map corrupted speech signals to clean acoustic representations, enabling **joint denoising and dereverberation** in a unified framework.
+**DBLM-SE** is a LLaMA-based **Diffusion Bridge Language Model (DBLM)** designed for high-fidelity **speech enhancement**. By modeling the restoration process as a *diffusion bridge* in the latent space, the model leverages an LLM-style architecture to map corrupted speech signals to clean acoustic representations, enabling **joint denoising and dereverberation** in a unified framework.
 
 ---
 
@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 ### Download Checkpoint
 
-Download the pretrained model from Hugging Face:
+Download the pretrained model of **DBLM-SE-1B** (with about 1 billion parameter) from Hugging Face:
 
 ```bash
 huggingface-cli download Yorch233/DBLM-SE-1B --local-dir checkpoints
